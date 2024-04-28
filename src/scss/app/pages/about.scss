@@ -1,0 +1,130 @@
+
+/*===========================================
+            About start Here
+===========================================*/
+
+.about-page-main{
+    position: relative;
+    padding-top: 112px;
+    @include breakpoint($secreen-xs){
+        padding-top: 80px;
+    }
+    .container-fluid{
+        .row-custom{
+            align-items: center;
+            margin-bottom: 48px;
+            @include breakpoint($secreen-max-sm){
+                text-align: center;
+            }
+            .col-heading-otr{
+                .col-heading-inr{
+                    @include breakpoint($secreen-max-sm){
+                        padding-bottom: 16px;
+                    }
+                    .heading{
+                        color: $White-Color;
+                    }
+                }
+            }
+            .col-desc-otr{
+                .col-desc-inr{
+                    .desc{
+                        color: $White-75;
+                    }
+                }
+            }
+        }
+        .row-custom2{
+            align-items: flex-end;
+            @include breakpoint($secreen-max-md){
+                gap: 24px 0;
+            }
+            .col-img-otr{
+                .col-img-inr{
+                    .img{
+                        width: 100%;
+                        border-radius: 4px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                    .img1{
+                        height: 370px;
+                        @include breakpoint($secreen-max-md){
+                            height: 300px;
+                        }
+                    }
+                    .img2,
+                    .img4{
+                        height: 450px;
+                        @include breakpoint($secreen-max-md){
+                            height: 300px;
+                        }
+                    }
+                    .img3{
+                        height: 300px;
+                        @include breakpoint($secreen-max-md){
+                            height: 300px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*===========================================
+            About End Here
+===========================================*/
+
+/*===========================================
+            Statistics start Here
+===========================================*/
+
+.statistics{
+    margin: 112px 0;
+    @include breakpoint($secreen-xs){
+        margin: 80px 0;
+    }
+    .container-fluid{
+        .wrapper{
+            text-align: center;
+            margin-bottom: 48px;
+            .heading{
+                color: $White-Color;
+                margin-bottom: 16px;
+            }
+            .desc{
+                color: $White-75;
+            }
+        }
+        .row-custom{
+            @include breakpoint($secreen-max-md){
+                gap: 24px 0;
+            }
+            .col-box-otr{
+                .col-box-inr{
+                    background: $Primary-10;
+                    border-radius: 4px;
+                    text-align: center;
+                    padding: 28px;
+                    .heading{
+                        color: $Primary-Color;
+                    }
+                    .desc{
+                        color: $White-75;
+                    }
+                }
+                .box-2{
+                    background-color: $White-10;
+                }
+                .box-4{
+                    background-color: $White-10;
+                }
+            }
+        }
+    }
+}
+
+/*===========================================
+            Statistics End Here
+===========================================*/

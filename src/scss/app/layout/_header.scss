@@ -1,0 +1,820 @@
+
+
+/*====================================
+        Search Modal Start Here
+====================================*/
+
+.search-modal{
+    position: relative;
+    z-index: 9999;
+    .modal{
+        .modal-dialog{
+            max-width: 100%;
+            width: 100%;
+            margin: 0;
+            .modal-content{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                border: none;
+                border-radius: 0;
+                outline: none;
+                background-color: $Black-Color2;
+                height: 100vh;
+                padding: 0 100px;
+                @include breakpoint($secreen-xs){
+                    padding: 0 15px;
+                }
+                .close-icon-otr{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    top: 24px;
+                    right: 24px;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 100%;
+                    background-color: $White-10;
+                    cursor: pointer;
+                    transition: .3s;
+                    &:hover{
+                        background-color: $Primary-Color;
+                        .icon{
+                            color: $Black-Color;
+                            font-weight: bold;
+                        }
+                    }
+                    .icon{
+                        font-size: 20px;
+                        color: $White-Color;
+                        transition: .3s;
+                    }
+                }
+                .heading{
+                    width: 100%;
+                    margin-bottom: 24px;
+                    color: $White-Color;
+                }
+                .input-otr{
+                    position: relative;
+                    width: 100%;
+                    .search-input{
+                        width: 100%;
+                        padding: 12px 56px 12px 24px;
+                    }
+                    .search-icon{
+                        position: absolute;
+                        font-size: 24px;
+                        color: $White-Color;
+                        right: 24px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*====================================
+        Search Modal End Here
+====================================*/
+
+/*====================================
+        Upload Modal Start Here
+====================================*/
+
+.upload-modal{
+    position: relative;
+    z-index: 9999;
+    .modal{
+        .modal-dialog{
+            max-width: 670px;
+            @include breakpoint($secreen-max-md){
+                max-width: 100%;
+            }
+            .modal-content{
+                position: relative;
+                border: none;
+                border-radius: 4;
+                outline: none;
+                padding: 32px 40px 40px 40px;
+                background-color: $Black-Color2;
+                overflow: hidden;
+                z-index: 2;
+                @include breakpoint($secreen-xs){
+                    padding: 24px 16px 16px 16px;
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width: 390px;
+                    height: 390px;
+                    top: 50%;
+                    left: -150px;
+                    transform: translateY(-50%);
+                    background: $BG-Linear-Gradiant;
+                    filter: blur(250px);
+                    opacity: 50%;
+                    z-index: -1;
+                }
+                .close-icon-otr{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    top: 24px;
+                    right: 24px;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 100%;
+                    background-color: $White-10;
+                    cursor: pointer;
+                    transition: .3s;
+                    @include breakpoint($secreen-xs){
+                        top: 10px;
+                        right: 10px;
+                        background-color: $White-Color;
+                    }
+                    &:hover{
+                        background-color: $Primary-Color;
+                        .icon{
+                            color: $Black-Color;
+                            font-weight: bold;
+                        }
+                    }
+                    .icon{
+                        font-size: 20px;
+                        color: $White-Color;
+                        transition: .3s;
+                        @include breakpoint($secreen-xs){
+                            color: $Black-Color;
+                        }
+                    }
+                }
+                .wrapper{
+                    text-align: center;
+                    margin-bottom: 36px;
+                    .heading{
+                        color: $White-Color;
+                        margin-bottom: 16px;
+                    }
+                    .desc{
+                        color: $White-75;
+                        .linkk{
+                            display: inline;
+                            color: $White-Color;
+                            transition: .3s;
+                            &:hover{
+                                color: $Primary-Color;
+                            }
+                        }
+                    }
+                }
+                .row-custom{
+                    gap: 24px 0;
+                    .col-upload-otr{
+                        .col-upload-inr{
+                            text-align: center;
+                            background-color: $White-10;
+                            border-radius: 4px;
+                            padding: 16px 24px 24px 24px;
+                            .upload-icon-otr{
+                                .icon{
+                                    width: 60px;
+                                }
+                            }
+                            .box-heading{
+                                color: $White-Color;
+                                margin: 12px 0 16px 0;
+                            }
+                            .action{
+                                display: flex;
+                                .upload-btn{
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*====================================
+        Upload Modal End Here
+====================================*/
+
+/*====================================
+        Connect Modal Start Here
+====================================*/
+
+.connect-modal{
+    position: relative;
+    z-index: 9999;
+    .modal{
+        .modal-dialog{
+            max-width: 900px;
+            @include breakpoint($secreen-max-md){
+                max-width: 100%;
+            }
+            .modal-content{
+                position: relative;
+                border: none;
+                border-radius: 4;
+                outline: none;
+                padding: 32px 40px 40px 40px;
+                background-color: $Black-Color2;
+                overflow: hidden;
+                z-index: 2;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width: 390px;
+                    height: 390px;
+                    top: 50%;
+                    left: -150px;
+                    transform: translateY(-50%);
+                    background: $BG-Linear-Gradiant;
+                    filter: blur(250px);
+                    opacity: 50%;
+                    z-index: -1;
+                }
+                .close-icon-otr{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    top: 24px;
+                    right: 24px;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 100%;
+                    background-color: $White-10;
+                    cursor: pointer;
+                    transition: .3s;
+                    @include breakpoint($secreen-xs){
+                        top: 10px;
+                        right: 10px;
+                        background-color: $White-Color;
+                    }
+                    &:hover{
+                        background-color: $Primary-Color;
+                        .icon{
+                            color: $Black-Color;
+                            font-weight: bold;
+                        }
+                    }
+                    .icon{
+                        font-size: 20px;
+                        color: $White-Color;
+                        transition: .3s;
+                        @include breakpoint($secreen-xs){
+                            color: $Black-Color;
+                        }
+                    }
+                }
+                .wrapper{
+                    text-align: center;
+                    margin-bottom: 48px;
+                    .heading{
+                        color: $White-Color;
+                        margin-bottom: 16px;
+                    }
+                    .desc{
+                        color: $White-75;
+                    }
+                }
+                .row-custom{
+                    align-items: center;
+                    justify-content: center;
+                    gap: 24px 0;
+                    .col-box-otr{
+                        .col-box-inr{
+                            display: flex;
+                            align-items: center;
+                            background-color: $White-10;
+                            padding: 12px 16px;
+                            border-radius: 4px;
+                            .icon-otr{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 4px;
+                                background-color: $White-Color;
+                                margin-right: 16px;
+                                .icon{
+
+                                }
+                            }
+                            .box-heading{
+                                color: $White-Color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*====================================
+        Connect Modal End Here
+====================================*/
+
+/*====================================
+        Overlay Start Here
+====================================*/
+
+.overlay-main{
+    .offcanvas{
+        z-index: 9999;
+        background-color: $Black-Color2;
+        .offcanvas-body{
+            padding: 16px;
+            .logo-main{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .logo-otr{
+                    .logo{
+                        width: 100px;
+                        height: 24px;
+                        object-fit: contain;
+                    }
+                }
+                .close-icon-otr{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 40px;
+                    height: 40px;
+                    background-color: $White-10;
+                    border-radius: 100%;
+                    cursor: pointer;
+                    transition: .3s;
+                    &:hover{
+                        background-color: $Primary-Color;
+                        .close-icon{
+                            color: $Black-Color;
+                        }
+                    }
+                    .close-icon{
+                        font-size: 20px;
+                        line-height: 0;
+                        color: $White-Color;
+                        transition: .3s;
+                    }
+                }
+            }
+            .accordion{
+                margin: 36px 0;
+                .accordion-item{
+                    background-color: transparent;
+                    border: none;
+                    &:not(:last-child){
+                        margin-bottom: 12px;
+                    }
+                    .accordion-header{
+                        .accordion-button{
+                            padding: 0;
+                            background-color: transparent;
+                            color: $White-Color;
+                            &:focus{
+                                border: none;
+                                box-shadow: none;
+                            }
+                            &::after{
+                                display: none;
+                            }
+                        }
+                        .accordion-button:not(.collapsed){
+                            color: $Primary-Color;
+                        }
+                    }
+                    .accordion-collapse{
+                        .accordion-body{
+                            padding: 8px 0 0 16px;
+                            .drop-ul{
+                                .drop-li{
+                                    &:not(:last-child){
+                                        margin-bottom: 8px;
+                                    }
+                                    .drop-a{
+                                        color: $White-Color;
+                                        transition: .3s;
+                                        &:hover{
+                                            color: $Primary-Color;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .menu-a{
+                    color: $White-Color;
+                    transition: .3s;
+                    margin-bottom: 8px;
+                    &:hover{
+                        color: $Primary-Color;
+                    }
+                }
+            }
+            .social-otr{
+                .heading{
+                    color: $White-Color;
+                    margin-bottom: 16px;
+                }
+                .social-ul{
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap: 16px;
+                    .social-li{
+                        .social-a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 100%;
+                            background-color: $White-Color;
+                            transition: .3s;
+                            &:hover{
+                                background-color: $Primary-Color;
+                                .icon{
+                                    color: $Black-Color;
+                                }
+                            }
+                            .icon{
+                                font-size: 20px;
+                                color: $Black-Color;
+                                transition: .3s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*====================================
+        Overlay End Here
+====================================*/
+
+/*====================================
+        Navbar Start Here
+====================================*/
+
+.navbar-main{
+    background-color: $Black-Color;
+    padding: 24px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9998;
+    .container-fluid{
+        .nav-bar{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .logo-main{
+                display: flex;
+                align-items: center;
+                .menu-icon-otr{
+                    display: none;
+                    align-items: center;
+                    justify-content: center;
+                    width: 40px;
+                    height: 40px;
+                    background-color: $White-10;
+                    border-radius: 100%;
+                    margin-right: 16px;
+                    cursor: pointer;
+                    transition: .3s;
+                    @include breakpoint($secreen-max-md){
+                        display: flex;
+                    }
+                    @include breakpoint($secreen-xs){
+                        width: 36px;
+                        height: 36px;
+                    }
+                    &:hover{
+                        background-color: $Primary-Color;
+                        .menu-icon{
+                            color: $Black-Color;
+                        }
+                    }
+                    .menu-icon{
+                        font-size: 20px;
+                        line-height: 0;
+                        color: $White-Color;
+                        transition: .3s;
+                        @include breakpoint($secreen-xs){
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .logo-otr{
+                    .logo{
+                        width: 100px;
+                        height: 24px;
+                        object-fit: contain;
+                        @include breakpoint($secreen-xs){
+                            width: 80px;
+                        }
+                    }
+                }
+            }
+            .action-otr{
+                display: flex;
+                align-items: center;
+                .menu-otr{
+                    padding-right: 24px;
+                    @include breakpoint($secreen-max-md){
+                        display: none;
+                    }
+                    .menu-ul{
+                        display: flex;
+                        align-items: center;
+                        gap: 0 40px;
+                        .menu-li{
+                            position: relative;
+                            &:hover{
+                                .menu-drop-otr{
+                                    opacity: 1;
+                                    visibility: visible;
+                                    top: 24px;
+                                }
+                            }
+                            .menu-a{
+                                position: relative;
+                                display: flex;
+                                align-items: center;
+                                color: $White-Color;
+                                transition: .3s;
+                                cursor: pointer;
+                                &:hover{
+                                    .circle-img{
+                                        opacity: 1;
+                                        visibility: visible;
+                                    }
+                                }
+                                .circle-img{
+                                    position: absolute;
+                                    left: -24px;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    width: 16px;
+                                    height: 16px;
+                                    opacity: 0;
+                                    visibility: hidden;
+                                    transition: .3s;
+                                }
+                            }
+                            .menu-drop-otr{
+                                position: absolute;
+                                left: -24px;
+                                top: 100px;
+                                padding-top: 24px;
+                                opacity: 0;
+                                visibility: hidden;
+                                transition: .3s;
+                                z-index: 9999;
+                                .arrow-box{
+                                    width: 20px;
+                                    height: 20px;
+                                    position: absolute;
+                                    top: 14px;
+                                    left: 48px;
+                                    border-radius: 2px;
+                                    background-color: $Black-Color2;
+                                    transform: rotate(45deg);
+                                    z-index: -1;
+                                }
+                                .drop-ul{
+                                    width: 250px;
+                                    background-color: $Black-Color2;
+                                    padding: 16px 24px;
+                                    border-radius: 4px;
+                                    z-index: 9999;
+                                    .drop-li{
+                                        position: relative;
+                                        &:not(:last-child){
+                                            margin-bottom: 12px;
+                                        }
+                                        &:hover{
+                                            .other-drop-otr{
+                                                opacity: 1;
+                                                visibility: visible;
+                                                top: 20px;
+                                            }
+                                        }
+                                        .drop-a{
+                                            position: relative;
+                                            display: flex;
+                                            align-items: center;
+                                            color: $White-Color;
+                                            cursor: pointer;
+                                            transition: .3s;
+                                            &:hover{
+                                                padding-left: 24px;
+                                                .drop-circle{
+                                                    opacity: 1;
+                                                    visibility: visible;
+                                                }
+                                            }
+                                            .drop-circle{
+                                                position: absolute;
+                                                left: 0px;
+                                                top: 50%;
+                                                transform: translateY(-50%);
+                                                width: 16px;
+                                                height: 16px;
+                                                opacity: 0;
+                                                visibility: hidden;
+                                                transition: .3s;
+                                            }
+                                        }
+                                        .other-drop-otr{
+                                            position: absolute;
+                                            right: 180px;
+                                            top: 100px;
+                                            padding-top: 36px;
+                                            opacity: 0;
+                                            visibility: hidden;
+                                            transition: .3s;
+                                            z-index: 9999;
+                                            .other-arrow-box{
+                                                width: 20px;
+                                                height: 20px;
+                                                position: absolute;
+                                                top: 26px;
+                                                right: 24px;
+                                                border-radius: 2px;
+                                                background-color: $Black-Color2;
+                                                transform: rotate(45deg);
+                                                z-index: -1;
+                                            }
+                                            .other-drop-ul{
+                                                width: 250px;
+                                                background-color: $Black-Color2;
+                                                padding: 16px 24px;
+                                                border-radius: 4px;
+                                                z-index: 9999;
+                                                .other-drop-li{
+                                                    &:not(:last-child){
+                                                        margin-bottom: 12px;
+                                                    }
+                                                    .other-drop-a{
+                                                        position: relative;
+                                                        display: flex;
+                                                        align-items: center;
+                                                        color: $White-Color;
+                                                        transition: .3s;
+                                                        &:hover{
+                                                            padding-left: 24px;
+                                                            .drop-circle{
+                                                                opacity: 1;
+                                                                visibility: visible;
+                                                            }
+                                                        }
+                                                        .drop-circle{
+                                                            position: absolute;
+                                                            left: 0px;
+                                                            top: 50%;
+                                                            transform: translateY(-50%);
+                                                            width: 16px;
+                                                            height: 16px;
+                                                            opacity: 0;
+                                                            visibility: hidden;
+                                                            transition: .3s;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .action{
+                    display: flex;
+                    align-items: center;
+                    gap: 0 24px;
+                    padding-left: 24px;
+                    border-left: 1px solid $White-45;
+                    @include breakpoint($secreen-max-md){
+                        border-left: 1px solid transparent;
+                        padding-left: 0;
+                    }
+                    @include breakpoint($secreen-xs){
+                        gap: 0 16px;
+                    }
+                    .icon-otr{
+                        .icon{
+                            height: 40px;
+                            cursor: pointer;
+                            @include breakpoint($secreen-xs){
+                                height: 36px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*====================================
+        Navbar End Here
+====================================*/
+
+/*====================================
+        Inner-header Start Here
+====================================*/
+
+.inner-header{
+    position: relative;
+    overflow: hidden;
+    background-color: $White-10;
+    margin-top: 88px;
+    @include breakpoint($secreen-xs){
+        margin-top: 84px;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 110px;
+        top: 0;
+        left: 0;
+        background: $BG-Linear-Gradiant;
+        filter: blur(200px);
+        opacity: .5;
+        z-index: -1;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        top: -150px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: $BG-Linear-Gradiant;
+        filter: blur(200px);
+        opacity: .5;
+        z-index: -1;
+    }
+    .circle-icon{
+        position: absolute;
+        height: 120px;
+        width: 120px;
+        left: -60px;
+        top: 50%;
+        transform: translateY(-50%);
+        @include breakpoint($secreen-xs){
+            width: 80px;
+            height: 80px;
+            left: -40px;
+        }
+    }
+    .cube-icon{
+        position: absolute;
+        height: 120px;
+        width: 120px;
+        right: -60px;
+        top: 50%;
+        transform: translateY(-50%);
+        @include breakpoint($secreen-xs){
+            width: 80px;
+            height: 80px;
+            right: -40px;
+        }
+    }
+    .container-fluid{
+        .wrapper{
+            text-align: center;
+            padding: 72px 0;
+            .heading{
+                color: $White-Color;
+            }
+        }
+    }
+}
+
+/*====================================
+        Inner-header End Here
+====================================*/

@@ -1,0 +1,26 @@
+@import '~breakpoint-sass/stylesheets/breakpoint';
+
+@import 'app/utilities/screens';
+@import 'app/utilities/mixins';
+@import 'app/utilities/variables';
+
+@import 'app/layout/header';
+@import 'app/layout/footer';
+@import 'app/pages/home';
+@import 'app/pages/home-v2.scss';
+@import 'app/pages/about.scss';
+@import 'app/pages/contact.scss';
+@import 'app/pages/help-center.scss';
+@import 'app/pages/login.scss';
+@import 'app/pages/signup.scss';
+@import 'app/pages/blog-details.scss';
+@import 'app/pages/404.scss';
+@import 'app/pages/activity.scss';
+@import 'app/pages/explore-artwork.scss';
+@import 'app/pages/single-creator.scss';
+@import 'app/pages/single-artwork.scss';
+@import 'app/pages/explore-creator.scss';
+@import 'app/pages/create-single.scss';
+@import 'app/pages/privacy-policy.scss';
+@import 'app/pages/terms-of-services.scss';
+@import 'app/utilities/helper';

@@ -1,0 +1,313 @@
+
+
+
+/*===========================================
+            footer start Here
+===========================================*/
+
+.footer{
+    position: relative;
+    padding: 112px 0 128px 0;
+    overflow: hidden;
+    @include breakpoint($secreen-xs){
+        padding: 80px 0;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        width: 550px;
+        height: 550px;
+        border-radius: 100%;
+        background: $BG-Linear-Gradiant;
+        left: -275px;
+        top: 50%;
+        transform: translateY(-50%);
+        filter: blur(250px);
+        opacity: .5;
+        z-index: -1;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        width: 550px;
+        height: 550px;
+        border-radius: 100%;
+        background: $BG-Linear-Gradiant;
+        right: -275px;
+        bottom: -275px;
+        filter: blur(250px);
+        opacity: .5;
+        z-index: -1;
+    }
+    .blur-circle{
+        position: absolute;
+        width: 550px;
+        height: 550px;
+        border-radius: 100%;
+        background: $BG-Linear-Gradiant;
+        right: 35%;
+        top: -275px;
+        transform: translateX(60%);
+        filter: blur(250px);
+        opacity: .5;
+        z-index: -1;
+    }
+    .container-fluid{
+        .row-custom-main{
+            .col-logo-otr{
+                .col-logo-inr{
+                    .logo-main{
+                        margin-bottom: 36px;
+                        .logo-otr{
+                            @include breakpoint($secreen-max-md){
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                            .logo{
+                                width: 100px;
+                                height: 24px;
+                                object-fit: contain;
+                            }
+                        }
+                        .desc{
+                            color: $White-75;
+                            margin: 24px 0;
+                            @include breakpoint($secreen-max-md){
+                                text-align: center;
+                            }
+                        }
+                        .social-ul{
+                            display: flex;
+                            align-items: center;
+                            flex-wrap: wrap;
+                            gap: 16px;
+                            @include breakpoint($secreen-max-md){
+                                justify-content: center;
+                            }
+                            .social-li{
+                                .social-a{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 52px;
+                                    height: 52px;
+                                    border-radius: 100%;
+                                    background-color: $White-Color;
+                                    transition: .3s;
+                                    &:hover{
+                                        background-color: $Primary-Color;
+                                        .icon{
+                                            color: $Black-Color;
+                                        }
+                                    }
+                                    .icon{
+                                        font-size: 24px;
+                                        color: $Black-Color;
+                                        transition: .3s;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .subscribe-main{
+                        .heading{
+                            color: $White-Color;
+                            margin-bottom: 24px;
+                            @include breakpoint($secreen-max-md){
+                                text-align: center;
+                            }
+                        }
+                        .action-otr{
+                            display: flex;
+                            align-items: center;
+                            @include breakpoint($secreen-xs){
+                                flex-direction: column;
+                            }
+                            .input-otr{
+                                width: 100%;
+                                margin-right: 24px;
+                                @include breakpoint($secreen-xs){
+                                    margin: 0 0 24px 0;
+                                }
+                                .input{
+                                    width: 100%;
+                                }
+                            }
+                            .action{
+                                display: flex;
+                                .subscribe-btn{
+                                    border: none;
+                                    &:focus{
+                                        outline: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .col-menu-art-otr{
+                .col-menu-art-inr{
+                    padding-left: 48px;
+                    @include breakpoint($secreen-max-md){
+                        padding: 36px 0 0 0;
+                    }
+                    .trending-main{
+                        margin-bottom: 36px;
+                        .heading{
+                            color: $White-Color;
+                            margin-bottom: 24px;
+                            @include breakpoint($secreen-max-md){
+                                text-align: center;
+                            }
+                        }
+                        .imgs-ul{
+                            display: flex;
+                            align-items: center;
+                            flex-wrap: wrap;
+                            gap: 16px;
+                            @include breakpoint($secreen-max-md){
+                                justify-content: center;
+                            }
+                            .imgs-li{
+                                .imgs-a{
+                                    .img{
+                                        width: 80px;
+                                        height: 80px;
+                                        object-fit: cover;
+                                        border-radius: 4px;
+                                        transition: .3s;
+                                        &:hover{
+                                            opacity: .5;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .row-custom{
+                        @include breakpoint($secreen-xs){
+                            gap: 36px 0;
+                        }
+                        .col-navigation-otr{
+                            .col-navigation-inr{
+                                @include breakpoint($secreen-max-md){
+                                    text-align: center;
+                                }
+                                .heading{
+                                    color: $White-Color;
+                                    margin-bottom: 16px;
+                                }
+                                .navigation-ul{
+                                    .navigation-li{
+                                        &:not(:last-child){
+                                            margin-bottom: 8px;
+                                        }
+                                        .navigation-a{
+                                            color: $White-45;
+                                            transition: .3s;
+                                            &:hover{
+                                                color: $Primary-Color;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .col-explore-otr{
+                            .col-explore-inr{
+                                @include breakpoint($secreen-max-md){
+                                    text-align: center;
+                                }
+                                .heading{
+                                    color: $White-Color;
+                                    margin-bottom: 16px;
+                                }
+                                .explore-ul{
+                                    .explore-li{
+                                        &:not(:last-child){
+                                            margin-bottom: 8px;
+                                        }
+                                        .explore-a{
+                                            color: $White-45;
+                                            transition: .3s;
+                                            &:hover{
+                                                color: $Primary-Color;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .col-community-otr{
+                            .col-community-inr{
+                                @include breakpoint($secreen-max-md){
+                                    text-align: center;
+                                }
+                                .heading{
+                                    color: $White-Color;
+                                    margin-bottom: 16px;
+                                }
+                                .community-ul{
+                                    .community-li{
+                                        &:not(:last-child){
+                                            margin-bottom: 8px;
+                                        }
+                                        .community-a{
+                                            color: $White-45;
+                                            transition: .3s;
+                                            &:hover{
+                                                color: $Primary-Color;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.copright{
+    background-color: $White-10;
+    .container-fluid{
+        .wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 24px 0;
+            @include breakpoint($secreen-max-sm){
+                flex-direction: column;
+                text-align: center;
+            }
+            .copyright-text{
+                color: $White-75;
+                @include breakpoint($secreen-max-sm){
+                    margin-bottom: 16px;
+                }
+                .linkk{
+                    display: inline;
+                    color: $White-Color;
+                }
+            }
+            .privacy-linkk-text{
+                color: $White-75;
+                .linkk-inr{
+                    display: inline;
+                    color: $White-75;
+                    transition: .3s;
+                    &:hover{
+                        color: $White-Color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*===========================================
+            footer End Here
+===========================================*/

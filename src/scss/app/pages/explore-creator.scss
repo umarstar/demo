@@ -1,0 +1,35 @@
+
+
+/*====================================
+    Explore Creator Start Here
+====================================*/
+
+.explore-creator{
+    margin: 112px 0;
+    @include breakpoint($secreen-xs){
+        margin: 80px 0;
+    }
+    .container-fluid{
+        .wrapper{
+            text-align: center;
+            margin-bottom: 48px;
+            .heading{
+                color: $White-Color;
+            }
+        }
+        .row-custom{
+            justify-content: center;
+            gap: 24px 0;
+        }
+        .action-otr{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 48px;
+        }
+    }
+}
+
+/*====================================
+    Explore Creator End Here
+====================================*/

@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url('../fonts/Poppins-SemiBold.eot');
+    src: url('../fonts/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+        url('../fonts/Poppins-SemiBold.woff') format('woff'),
+        url('../fonts/Poppins-SemiBold.ttf') format('truetype'),
+        url('../fonts/Poppins-SemiBold.svg#Poppins-SemiBold') format('svg');
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../fonts/Poppins-Regular.eot');
+    src: url('../fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Poppins-Regular.woff2') format('woff2'),
+        url('../fonts/Poppins-Regular.woff') format('woff'),
+        url('../fonts/Poppins-Regular.ttf') format('truetype'),
+        url('../fonts/Poppins-Regular.svg#Poppins-Regular') format('svg');
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('../fonts/Poppins-Bold.eot');
+    src: url('../fonts/Poppins-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Poppins-Bold.woff2') format('woff2'),
+        url('../fonts/Poppins-Bold.woff') format('woff'),
+        url('../fonts/Poppins-Bold.ttf') format('truetype'),
+        url('../fonts/Poppins-Bold.svg#Poppins-Bold') format('svg');
+}
+
+@font-face {
+    font-family: 'Orbitron-Medium';
+    src: url('../fonts/Orbitron-Medium.eot');
+    src: url('../fonts/Orbitron-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Orbitron-Medium.woff2') format('woff2'),
+        url('../fonts/Orbitron-Medium.woff') format('woff'),
+        url('../fonts/Orbitron-Medium.ttf') format('truetype'),
+        url('../fonts/Orbitron-Medium.svg#Orbitron-Medium') format('svg');
+}
+
+@font-face {
+    font-family: 'Orbitron-Regular';
+    src: url('../fonts/Orbitron-Regular.eot');
+    src: url('../fonts/Orbitron-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Orbitron-Regular.woff2') format('woff2'),
+        url('../fonts/Orbitron-Regular.woff') format('woff'),
+        url('../fonts/Orbitron-Regular.ttf') format('truetype'),
+        url('../fonts/Orbitron-Regular.svg#Orbitron-Regular') format('svg');
+}
+
+@font-face {
+    font-family: 'Orbitron-Bold';
+    src: url('../fonts/Orbitron-Bold.eot');
+    src: url('../fonts/Orbitron-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Orbitron-Bold.woff2') format('woff2'),
+        url('../fonts/Orbitron-Bold.woff') format('woff'),
+        url('../fonts/Orbitron-Bold.ttf') format('truetype'),
+        url('../fonts/Orbitron-Bold.svg#Orbitron-Bold') format('svg');
+}
+
+@font-face {
+    font-family: 'Orbitron-SemiBold';
+    src: url('../fonts/Orbitron-SemiBold.eot');
+    src: url('../fonts/Orbitron-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Orbitron-SemiBold.woff2') format('woff2'),
+        url('../fonts/Orbitron-SemiBold.woff') format('woff'),
+        url('../fonts/Orbitron-SemiBold.ttf') format('truetype'),
+        url('../fonts/Orbitron-SemiBold.svg#Orbitron-SemiBold') format('svg');
+}
+

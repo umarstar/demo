@@ -1,0 +1,33 @@
+
+
+/*===========================================
+        Terms of services start Here
+===========================================*/
+
+.terms-of-services{
+    margin: 112px 0;
+    @include breakpoint($secreen-xs){
+        margin: 80px 0;
+    }
+    .container{
+        .wrapper{
+            .heading-1{
+                margin-top: 0;
+            }
+            .desc{
+                color: $White-75;
+            }
+            .para{
+                padding: 0 0 16px 0;
+            }
+            .heading{
+                margin: 24px 0 16px 0;
+                color: $White-Color;
+            }
+        }
+    }
+}
+
+/*===========================================
+        Terms of services End Here
+===========================================*/

@@ -1,0 +1,889 @@
+
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: $Black-Color;
+}
+
+ul,li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+    padding: 0px;
+    @include breakpoint($secreen-max-lg){
+        br{
+            display: none;
+        }
+    }
+}
+.container-fluid{
+    padding: 0 45px;
+    @include breakpoint($secreen-max-md){
+        padding: 0 15px;
+    }
+}
+
+
+
+
+
+
+.heading-large-h1{
+    font-size: $font-size-80px;
+    line-height: $line-height-100px;
+    font-family: $Font-Family-Orbitron-Bold;
+    letter-spacing: $letter-spacing-03;
+    @include breakpoint($secreen-max-md){
+        font-size: $font-size-60px;
+        line-height: $line-height-80px;
+    }
+    @include breakpoint($secreen-xs){
+        font-size: $font-size-40px;
+        line-height: $line-height-56px;
+        letter-spacing: $letter-spacing-04;
+    }
+}
+
+.heading-medium-h1{
+    font-size: $font-size-60px;
+    line-height: $line-height-80px;
+    font-family: $Font-Family-Orbitron-Bold;
+    letter-spacing: $letter-spacing-03;
+    @include breakpoint($secreen-xs){
+        font-size: $font-size-40px;
+        line-height: $line-height-56px;
+        letter-spacing: $letter-spacing-04;
+    }
+}
+
+.heading-h2{
+    font-size: $font-size-40px;
+    line-height: $line-height-56px;
+    font-family: $Font-Family-Orbitron-Bold;
+    letter-spacing: $letter-spacing-04;
+    @include breakpoint($secreen-xs){
+        font-size: $font-size-24px;
+        line-height: $line-height-36px;
+    }
+}
+
+.heading-h3{
+    font-size: $font-size-24px;
+    line-height: $line-height-36px;
+    font-family: $Font-Family-Orbitron-Bold;
+    letter-spacing: $letter-spacing-04;
+}
+
+.heading-L{
+    font-size: $font-size-20px;
+    line-height: $line-height-36px;
+    font-family: $Font-Family-Poppins-Regular;
+}
+
+.heading-LB{
+    font-size: $font-size-20px;
+    line-height: $line-height-36px;
+    font-family: $Font-Family-Poppins-SemiBold;
+}
+
+.heading-M{
+    font-size: $font-size-18px;
+    line-height: $line-height-32px;
+    font-family: $Font-Family-Poppins-Regular;
+}
+
+.heading-MB{
+    font-size: $font-size-18px;
+    line-height: $line-height-32px;
+    font-family: $Font-Family-Poppins-SemiBold;
+}
+
+.heading-S{
+    font-size: $font-size-16px;
+    line-height: $line-height-28px;
+    font-family: $Font-Family-Poppins-Regular;
+}
+
+.heading-SB{
+    font-size: $font-size-16px;
+    line-height: $line-height-28px;
+    font-family: $Font-Family-Poppins-SemiBold;
+}
+
+.heading-XS{
+    font-size: $font-size-14px;
+    line-height: $line-height-24px;
+    font-family: $Font-Family-Poppins-Regular;
+}
+
+.haeding-XSB{
+    font-size: $font-size-14px;
+    line-height: $line-height-24px;
+    font-family: $Font-Family-Poppins-SemiBold;
+}
+
+.heading-S-Orbitron{
+    font-size: $font-size-16px;
+    line-height: $line-height-28px;
+    font-family: $Font-Family-Orbitron-Regular;
+    letter-spacing: $letter-spacing-06;
+}
+
+.heading-SB-Orbitron{
+    font-size: $font-size-16px;
+    line-height: $line-height-28px;
+    font-family: $Font-Family-Orbitron-Bold;
+    letter-spacing: $letter-spacing-06;
+}
+
+.heading-XS-Orbitron{
+    font-size: $font-size-14px;
+    line-height: $line-height-24px;
+    font-family: $Font-Family-Orbitron-Regular;
+    letter-spacing: $letter-spacing-04;
+}
+
+.heading-XSB-Orbitron{
+    font-size: $font-size-14px;
+    line-height: $line-height-24px;
+    font-family: $Font-Family-Orbitron-Bold;
+    letter-spacing: $letter-spacing-04;
+}
+
+.heading-XXS-Orbitron{
+    font-size: $font-size-12px;
+    line-height: $line-height-22px;
+    font-family: $Font-Family-Orbitron-Regular;
+    letter-spacing: $letter-spacing-04;
+}
+
+.heading-XXSB-Orbitron{
+    font-size: $font-size-12px;
+    line-height: $line-height-22px;
+    font-family: $Font-Family-Orbitron-Bold;
+    letter-spacing: $letter-spacing-04;
+}
+
+.theme-btn-1{
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: $font-size-16px;
+    line-height: $line-height-28px;
+    font-family: $Font-Family-Orbitron-Bold;
+    letter-spacing: $letter-spacing-06;
+    background-color: $Primary-Color;
+    color: $Black-Color;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: .4s;
+    &:hover{
+        background-color: $White-Color;
+        color: $Black-Color;
+    }
+}
+
+.theme-btn-border{
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: $font-size-16px;
+    line-height: $line-height-28px;
+    font-family: $Font-Family-Orbitron-Bold;
+    letter-spacing: $letter-spacing-06;
+    background-color: transparent;
+    color: $Primary-Color;
+    border: 1px solid $Primary-Color;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: .4s;
+    &:hover{
+        background-color: $Primary-Color;
+        color: $Black-Color;
+        border: 1px solid transparent;
+    }
+}
+
+.theme-btn-2{
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: $font-size-16px;
+    line-height: $line-height-28px;
+    font-family: $Font-Family-Orbitron-Bold;
+    letter-spacing: $letter-spacing-06;
+    background-color: $Secondary-50;
+    color: $Primary-Color;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: .4s;
+    &:hover{
+        background-color: $Primary-Color;
+        color: $Black-Color;
+    }
+}
+.theme-btn-small1{
+    padding: 6px 16px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: $font-size-12px;
+    line-height: $line-height-22px;
+    font-family: $Font-Family-Orbitron-Bold;
+    letter-spacing: $letter-spacing-04;
+    background-color: $Primary-Color;
+    color: $Black-Color;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: .3s;
+    &:hover{
+        background-color: $White-Color;
+        color: $Black-Color;
+    }
+}
+
+.theme-btn-small2{
+    padding: 6px 16px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: $font-size-12px;
+    line-height: $line-height-22px;
+    font-family: $Font-Family-Orbitron-Bold;
+    letter-spacing: $letter-spacing-04;
+    background-color: $Secondary-50;
+    color: $Primary-Color;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: .3s;
+    &:hover{
+        background-color: $Primary-Color;
+        color: $Black-Color;
+    }
+}
+
+.input-theme{
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: $font-size-16px;
+    line-height: $line-height-28px;
+    font-family: $Font-Family-Orbitron-Bold;
+    background-color: $White-10;
+    color: $White-Color;
+    border: none;
+    text-transform: capitalize;
+}
+
+.input-theme:focus{
+    outline: none;
+    border: none;
+}
+
+.input-theme:focus::placeholder{
+    opacity: 0;
+}
+
+.input-theme::placeholder{
+    color: $White-Color;
+    transition: .3s;
+}
+
+
+
+.col-artwork-otr{
+    @include breakpoint($secreen-lg){
+        width: 33.3333%;
+    }
+    .col-artwork-inr{
+        position: relative;
+        background-color: $White-10;
+        border-radius: 4px;
+        padding: 16px;
+        border: 1px solid $Secondary-Color;
+        transition: .3s;
+        overflow: hidden;
+        &:hover{
+            padding: 16px 16px 68px 16px;
+            .auction-img-otr{
+                .auction-img{
+                    height: 228px;
+                    object-fit: cover;
+                }
+                .social-otr{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            .action{
+                opacity: 1;
+                visibility: visible;
+                bottom: 16px;
+            }
+        }
+        .auction-img-otr{
+            position: relative;
+            .auction-img{
+                border-radius: 4px;
+                width: 100%;
+                height: 280px;
+                transition: .3s;
+                object-fit: cover;
+            }
+            .social-otr{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: $Black-65;
+                top: 0;
+                left: 0;
+                border-radius: 4px;
+                transition: .3s;
+                z-index: 1;
+                opacity: 0;
+                visibility: hidden;
+                .icon-ul{
+                    display: flex;
+                    gap: 0 16px;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    .icon-li{
+                        &:hover{
+                            .icon-a{
+                                background-color: $Primary-Color;
+                            }
+                        }
+                        .icon-a{
+                            height: 40px;
+                            width: 40px;
+                            border-radius: 100%;
+                            background-color: $White-Color;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transition: .3s;
+                            .icon{
+                                font-size: 20px;
+                                line-height: 0;
+                                color: $Black-Color;
+                                transition: .3s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .heading-otr{
+            padding: 8px 0 4px 0;
+            display: flex;
+            justify-content: space-between;
+            .heading{
+                color: $White-Color;
+                transition: .3s;
+                &:hover{
+                    color: $Primary-Color;
+                }
+            }
+            .dots-otr{
+                cursor: pointer;
+                .dots-inr{
+                    font-size: 24px;
+                    color: $White-Color;
+                }
+            }
+        }
+        .username{
+            color: $White-Color;
+        }
+        .bid-price{
+            padding-top: 6px;
+            display: flex;
+            justify-content: space-between;
+            .bid{
+                color: $White-45;
+            }
+            .price{
+                color: $White-Color;
+            }
+        }
+        .action{
+            position: absolute;
+            display: flex;
+            width: calc(100% - 32px) !important;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: .3s;
+            opacity: 0;
+            visibility: hidden;
+            .explore-btn{
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+.col-creator-otr{
+    @include breakpoint($secreen-lg){
+        width: 50%;
+    }
+    .col-creator-inr{
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        background-color: $White-10;
+        border: 1px solid $Secondary-Color;
+        border-radius: 4px;
+        &:hover{
+            .num-otr{
+                background-color: $Primary-Color;
+                .num{
+                    color: $Black-Color;
+                }
+            }
+        }
+        .num-otr{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20%;
+            background-color: $Secondary-50;
+            border-radius: 4px 0px 0px 4px;
+            transition: .3s;
+            @include breakpoint($secreen-xs){
+                display: none;
+            }
+            .num{
+                color: $Primary-Color;
+                transition: .3s;
+            }
+        }
+        .profile-otr{
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1fr auto;
+            width: 80%;
+            padding: 16px 16px 16px 24px;
+            gap: 16px;
+            @include breakpoint($secreen-xs){
+                width: 100%;
+                padding: 16px;
+            }
+            .user-info{
+                display: flex;
+                align-items: center;
+                .user-img-otr{
+                    position: relative;
+                    margin-right: 20px;
+                    .creator-img{
+                        width: 60px;
+                        height: 60px;
+                        object-fit: cover;
+                        border: 2px solid $White-Color;
+                        border-radius: 4px;
+                    }
+                    .check-icon-otr{
+                        position: absolute;
+                        bottom: -2px;
+                        right: -2px;
+                        width: 20px;
+                        height: 20px;
+                        background-color: $White-Color;
+                        border-radius: 100%;
+                        border: 1px solid $Black-Color;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .check-icon{
+                            color: $Black-Color;
+                            font-size: 14px;
+                            line-height: 0;
+                            font-weight: bold;
+                        }
+                    }
+                }
+                .username-otr{
+                    .username{
+                        color: $White-Color;
+                        transition: .3s;
+                        &:hover{
+                            color: $Primary-Color;
+                        }
+                    }
+                    .user-funds{
+                        color: $White-75;
+                    }
+                }
+            }
+            .more-icon-otr{
+                width: 30px;
+                height: 30px;
+                border-radius: 100%;
+                background-color: $White-10;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                .more-icon{
+                    color: $White-Color;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+.col-collection-otr{
+    @include breakpoint($secreen-lg){
+        width: 50%;
+    }
+    .col-collection-inr{
+        background-color: $White-10;
+        border-radius: 4px;
+        padding: 16px;
+        .img-otr{
+            position: relative;
+            width: 100%;
+            padding-right: 96px;
+            margin-bottom: 16px;
+            @include breakpoint($secreen-xxs){
+                padding-right: 76px;
+            }
+            @include breakpoint($secreen-sm){
+                padding-right: 76px;
+            }
+            .collection-art{
+                position: relative;
+                .swiper-wrapper{
+                    .swiper-slide{
+                        .slide-img{
+                            height: 264px;
+                            width: 100%;
+                            border-radius: 4px;
+                            object-fit: cover;
+                            @include breakpoint($secreen-xxs){
+                                height: 204px;
+                            }
+                            @include breakpoint($secreen-sm){
+                                height: 204px;
+                            }
+                        }
+                    }
+                }
+                .arrow-otr{
+                    position: absolute;
+                    width: 100%;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                    z-index: 10;
+                    .arrow-inr{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 100%;
+                        background-color: $White-Color;
+                        transition: .3s;
+                        &:hover{
+                            background-color: $Primary-Color;
+                        }
+                        &::after{
+                            display: none;
+                        }
+                        .icon{
+                            font-size: 20px;
+                            line-height: 0;
+                            color: $Black-Color;
+                            transition: .3s;
+                        }
+                    }
+                }
+            }
+            .collection-tab{
+                position: absolute;
+                height: 80px;
+                width: 264px;
+                top: 92px;
+                right: -92px;
+                transform: rotate(90deg);
+                @include breakpoint($secreen-xxs){
+                    height: 60px;
+                    width: 204px;
+                    top: 72px;
+                    right: -72px;
+                }
+                @include breakpoint($secreen-sm){
+                    height: 60px;
+                    width: 204px;
+                    top: 72px;
+                    right: -72px;
+                }
+                .swiper-wrapper{
+                    .swiper-slide{
+                        opacity: 30%;
+                        transition: .3s;
+                        transform: rotate(-90deg);
+                        .thumb-img{
+                            width: 76px;
+                            height: 76px;
+                            object-fit: cover;
+                            border-radius: 4px;
+                            border: 2px solid transparent;
+                            transition: .3s;
+                            @include breakpoint($secreen-xxs){
+                                width: 56px;
+                                height: 56px;
+                            }
+                            @include breakpoint($secreen-sm){
+                                width: 56px;
+                                height: 56px;
+                            }
+                        }
+                    }
+                    .swiper-slide-thumb-active{
+                        opacity: 1;
+                        .thumb-img{
+                            border: 2px solid $White-Color;
+                        }
+                    }
+                }
+            }
+        }
+        .profile-otr{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: $White-10;
+            padding: 16px;
+            border-radius: 4px;
+            @include breakpoint($secreen-xxs){
+                align-items: baseline;
+            }
+            @include breakpoint($secreen-sm){
+                align-items: baseline;
+            }
+            .user-content-otr{
+                display: flex;
+                align-items: center;
+                @include breakpoint($secreen-xxs){
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 16px 0;
+                }
+                @include breakpoint($secreen-sm){
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 16px 0;
+                }
+                .user-img-otr{
+                    position: relative;
+                    margin-right: 16px;
+                    .user-img{
+                        width: 60px;
+                        height: 60px;
+                        object-fit: cover;
+                        border-radius: 4px;
+                        border: 2px solid $White-Color;
+                    }
+                    .check-icon-otr{
+                        position: absolute;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        bottom: -2px;
+                        right: -2px;
+                        width: 20px;
+                        height: 20px;
+                        background-color: $White-Color;
+                        border-radius: 100%;
+                        border: 1px solid $Black-Color;
+                        .check-icon{
+                            color: $Black-Color;
+                            font-size: 14px;
+                            line-height: 0;
+                            font-weight: bold;
+                        }
+                    }
+                }
+                .content{
+                    .heading{
+                        color: $White-Color;
+                        margin-bottom: 4px;
+                        transition: .3s;
+                        &:hover{
+                            color: $Primary-Color;
+                        }
+                    }
+                    .user-name{
+                        color: $White-45;
+                        .name{
+                            display: inline;
+                            color: $Primary-Color;
+                        }
+                    }
+                }
+            }
+            .follow-otr{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+                background-color: $White-10;
+                transition: .3s;
+                &:hover{
+                    background-color: $White-Color;
+                    .follow-icon{
+                        color: $Black-Color;
+                    }
+                }
+                .follow-icon{
+                    font-size: 20px;
+                    line-height: 0;
+                    color: $White-Color;
+                    transition: .3s;
+                }
+            }
+        }
+    }
+}
+
+
+
+.activity-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid $Secondary-Color;
+    transition: .3s;
+    @include breakpoint($secreen-xs){
+        position: relative;
+    }
+    &:hover{
+        background-color: $Secondary-50;
+    }
+    .img-content{
+        display: flex;
+        align-items: center;
+        @include breakpoint($secreen-xs){
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .img-otr{
+            margin-right: 16px;
+            @include breakpoint($secreen-xs){
+                margin: 0 0 16px 0;
+            }
+            .img{
+                width: 200px;
+                height: 130px;
+                object-fit: cover;
+                border-radius: 4px;
+            }
+        }
+        .content-otr{
+            .heading{
+                color: $White-Color;
+                transition: .3s;
+                &:hover{
+                    color: $Primary-Color;
+                }
+            }
+            .desc{
+                color: $White-75;
+                margin: 8px 0;
+                .linkk{
+                    display: inline;
+                    color: $Primary-Color;
+                }
+            }
+            .tag-otr{
+                display: flex;
+                align-items: center;
+                @include breakpoint($secreen-xxs){
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                .tag-inr1{
+                    display: flex;
+                    align-items: center;
+                    color: $White-75;
+                    &:not(:last-child){
+                        margin-right: 24px;
+                        @include breakpoint($secreen-xxs){
+                            margin: 0 0 8px 0;
+                        }
+                    }
+                    .icon-time{
+                        font-size: 20px;
+                        color: $Primary-Color;
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+    }
+    .icon-otr{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        background-color: $White-10;
+        cursor: pointer;
+        transition: .3s;
+        @include breakpoint($secreen-xs){
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            top: 16px;
+            right: 16px;
+        }
+        &:hover{
+            background-color: $Primary-Color;
+            .icon{
+                color: $Black-Color;
+            }
+        }
+        .icon{
+            font-size: 28px;
+            color: $White-Color;
+            transition: .3s;
+            @include breakpoint($secreen-xs){
+                font-size: 20px;
+            }
+        }
+    }
+}

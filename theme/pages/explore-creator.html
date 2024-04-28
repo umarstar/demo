@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murs - NFT Marketplace HTML & Bootstrap 5 Template</title>
+    <link rel="icon" href="../assets/img/favicon.png" sizes="16x16">
+    <link rel="stylesheet" href="../assets/libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/libs/remixicon/fonts/remixicon.css">
+    <link rel="stylesheet" href="../assets/libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../assets/fonts/fonts.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
+</head>
+<body>
+  
+    <!--==================================
+            Search start Here
+    ===================================-->
+
+        <div class="search-modal">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="close-icon-otr" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="ri-close-line icon"></i>
+                        </div>
+                        <h3 class="heading heading-h3">Search Here</h3>
+                        <div class="input-otr">
+                            <input class="input-theme search-input" type="search" name="search" placeholder="Search Murs">
+                            <i class="ri-search-line search-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!--==================================
+            Search End Here
+    ===================================-->
+
+    <!--==================================
+            Upload start Here
+    ===================================-->
+
+        <div class="upload-modal">
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="close-icon-otr" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="ri-close-line icon"></i>
+                        </div>
+                        <div class="wrapper">
+                            <h3 class="heading heading-h3">Upload Variants</h3>
+                            <p class="desc heading-S">
+                                Choose “ <a href="../pages/create-single.html" class="linkk">Single</a> ” if you want your collectible to be one of a kind or “ <a href="../pages/create-multiple.html" class="linkk">Multiple</a> ” if you want to sell one collectible multiple times.
+                            </p>
+                        </div>
+                        <div class="row row-custom">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-upload-otr">
+                                <div class="col-upload-inr">
+                                    <a href="../pages/create-single.html" class="upload-icon-otr">
+                                        <img class="icon" src="../assets/img/upload-icon.png" alt="icon">
+                                    </a>
+                                    <p class="box-heading heading-SB-Orbitron">Upload Single Item</p>
+                                    <div class="action">
+                                        <a href="../pages/create-single.html" class="theme-btn-1 upload-btn">Upload Single</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-upload-otr">
+                                <div class="col-upload-inr">
+                                    <a href="../pages/create-multiple.html" class="upload-icon-otr">
+                                        <img class="icon" src="../assets/img/upload-icon.png" alt="icon">
+                                    </a>
+                                    <p class="box-heading heading-SB-Orbitron">Upload Multiple Item</p>
+                                    <div class="action">
+                                        <a href="../pages/create-multiple.html" class="theme-btn-1 upload-btn">Upload Multiple</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!--==================================
+            Upload End Here
+    ===================================-->
+
+    <!--==================================
+            Connect Wallet start Here
+    ===================================-->
+
+        <div class="connect-modal">
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="close-icon-otr" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="ri-close-line icon"></i>
+                        </div>
+                        <div class="wrapper">
+                            <h2 class="heading heading-h2">Connect Wallet</h2>
+                            <p class="desc heading-M">
+                                You can connect your wallet with one of the <br> following wallet providers.
+                            </p>
+                        </div>
+                        <div class="row row-custom">
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-box-otr">
+                                <div class="col-box-inr">
+                                    <div class="icon-otr">
+                                        <img class="icon" src="../assets/img/connect-wallet-icon1.svg" alt="icon">
+                                    </div>
+                                    <p class="box-heading heading-LB">MetaMask</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-box-otr">
+                                <div class="col-box-inr">
+                                    <div class="icon-otr">
+                                        <img class="icon" src="../assets/img/connect-wallet-icon2.svg" alt="icon">
+                                    </div>
+                                    <p class="box-heading heading-LB">CoinBase</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-box-otr">
+                                <div class="col-box-inr">
+                                    <div class="icon-otr">
+                                        <img class="icon" src="../assets/img/connect-wallet-icon3.svg" alt="icon">
+                                    </div>
+                                    <p class="box-heading heading-LB">Fortmatic</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-box-otr">
+                                <div class="col-box-inr">
+                                    <div class="icon-otr">
+                                        <img class="icon" src="../assets/img/connect-wallet-icon4.svg" alt="icon">
+                                    </div>
+                                    <p class="box-heading heading-LB">Binance Wallet</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-box-otr">
+                                <div class="col-box-inr">
+                                    <div class="icon-otr">
+                                        <img class="icon" src="../assets/img/connect-wallet-icon5.svg" alt="icon">
+                                    </div>
+                                    <p class="box-heading heading-LB">Trust Wallet</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!--==================================
+            Connect Wallet End Here
+    ===================================-->
+
+    <!--==================================
+          Overlay start Here
+    ===================================-->
+
+        <div class="overlay-main">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-body">
+                    <div class="logo-main">
+                        <a href="../index.html" class="logo-otr">
+                            <img class="logo" src="../assets/img/brand-logo.png" alt="logo">
+                        </a>
+                        <div class="close-icon-otr" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <i class="ri-close-line close-icon"></i>
+                        </div>
+                    </div>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed heading-SB" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                    Home
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul class="drop-ul">
+                                        <li class="drop-li">
+                                            <a href="../index.html" class="drop-a heading-SB">Home Layout 1</a>
+                                        </li>
+                                        <li class="drop-li">
+                                            <a href="../pages/home-v2.html" class="drop-a heading-SB">Home Layout 2</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed heading-SB" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    Explore
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul class="drop-ul">
+                                        <li class="drop-li">
+                                            <a href="../pages/explore-artwork.html" class="drop-a heading-SB">Explore Artwork</a>
+                                        </li>
+                                        <li class="drop-li">
+                                            <a href="../pages/single-artwork.html" class="drop-a heading-SB">Single Artwork</a>
+                                        </li>
+                                        <li class="drop-li">
+                                            <a href="../pages/explore-creator.html" class="drop-a heading-SB">Explore Creator</a>
+                                        </li>
+                                        <li class="drop-li">
+                                            <a href="../pages/single-creator.html" class="drop-a heading-SB">Single Creator</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="../pages/activity.html" class="menu-a heading-SB">Activity</a>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed heading-SB" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Pages
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul class="drop-ul">
+                                        <li class="drop-li">
+                                            <a href="../pages/about.html" class="drop-a heading-SB">About</a>
+                                        </li>
+                                        <li class="drop-li">
+                                            <a href="../pages/how-it-work.html" class="drop-a heading-SB">How It Works</a>
+                                        </li>
+                                        <li class="drop-li">
+                                            <a href="../pages/contact.html" class="drop-a heading-SB">Contact</a>
+                                        </li>
+                                        <li class="drop-li">
+                                            <a href="../pages/login.html" class="drop-a heading-SB">Login</a>
+                                        </li>
+                                        <li class="drop-li">
+                                            <a href="../pages/signup.html" class="drop-a heading-SB">Sign Up</a>
+                                        </li>
+                                        <li class="drop-li">
+                                            <a href="../pages/404.html" class="drop-a heading-SB">404</a>
+                                        </li>
+                                        <li class="drop-li">
+                                            <a href="../pages/Privacy-policy.html" class="drop-a heading-SB">Privacy Policy</a>
+                                        </li>
+                                        <li class="drop-li">
+                                            <a href="../pages/Terms-of-services.html" class="drop-a heading-SB">Terms of Services</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed heading-SB" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Community
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul class="drop-ul">
+                                        <li class="drop-li">
+                                            <a href="../pages/blog.html" class="drop-a heading-SB">Blog</a>
+                                        </li>
+                                        <li class="drop-li">
+                                            <a href="../pages/help-center.html" class="drop-a heading-SB">Help Center</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-otr">
+                        <p class="heading heading-LB">Follow Us Now</p>
+                        <ul class="social-ul">
+                            <li class="social-li">
+                                <a  class="social-a" href="#">
+                                    <i class="ri-facebook-circle-line icon"></i>
+                                </a>
+                            </li>
+                            <li class="social-li">
+                                <a  class="social-a" href="#">
+                                    <i class="ri-twitter-line icon"></i>
+                                </a>
+                            </li>
+                            <li class="social-li">
+                                <a  class="social-a" href="#">
+                                    <i class="ri-discord-line icon"></i>
+                                </a>
+                            </li>
+                            <li class="social-li">
+                                <a  class="social-a" href="#">
+                                    <i class="ri-pinterest-line icon"></i>
+                                </a>
+                            </li>
+                            <li class="social-li">
+                                <a  class="social-a" href="#">
+                                    <i class="ri-youtube-line icon"></i>
+                                </a>
+                            </li>
+                            <li class="social-li">
+                                <a  class="social-a" href="#">
+                                    <i class="ri-telegram-line icon"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!--==================================
+            Overlay End Here
+    ===================================-->
+
+    <!--==================================
+            Navbar start Here
+    ===================================-->
+
+        <header class="navbar-main">
+            <div class="container-fluid">
+                <div class="nav-bar">
+                    <div class="logo-main">
+                        <div class="menu-icon-otr" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            <i class="ri-menu-unfold-line menu-icon"></i>
+                        </div>
+                        <a href="../index.html" class="logo-otr">
+                            <img class="logo" src="../assets/img/brand-logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="action-otr">
+                        <div class="menu-otr">
+                            <ul class="menu-ul">
+                                <li class="menu-li">
+                                    <p class="menu-a heading-SB">
+                                        <img class="circle-img" src="../assets/img/navbar-circle.png" alt="circle">
+                                        Home
+                                    </p>
+                                    <div class="menu-drop-otr">
+                                        <span class="arrow-box"></span>
+                                        <ul class="drop-ul">
+                                            <li class="drop-li">
+                                                <a href="../index.html" class="drop-a heading-SB">
+                                                    <img class="drop-circle" src="../assets/img/navbar-circle.png" alt="circle">
+                                                    Home Layout 1
+                                                </a>
+                                            </li>
+                                            <li class="drop-li">
+                                                <a href="../pages/home-v2.html" class="drop-a heading-SB">
+                                                    <img class="drop-circle" src="../assets/img/navbar-circle.png" alt="circle">
+                                                    Home Layout 2
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu-li">
+                                    <p class="menu-a heading-SB">
+                                        <img class="circle-img" src="../assets/img/navbar-circle.png" alt="circle">
+                                        Explore
+                                    </p>
+                                    <div class="menu-drop-otr">
+                                        <span class="arrow-box"></span>
+                                        <ul class="drop-ul">
+                                            <li class="drop-li">
+                                                <a href="../pages/explore-artwork.html" class="drop-a heading-SB">
+                                                    <img class="drop-circle" src="../assets/img/navbar-circle.png" alt="circle">
+                                                    Explore Artworks
+                                                </a>
+                                            </li>
+                                            <li class="drop-li">
+                                                <a href="../pages/single-artwork.html" class="drop-a heading-SB">
+                                                    <img class="drop-circle" src="../assets/img/navbar-circle.png" alt="circle">
+                                                    Single Artworks
+                                                </a>
+                                            </li>
+                                            <li class="drop-li">
+                                                <a href="../pages/explore-creator.html" class="drop-a heading-SB">
+                                                    <img class="drop-circle" src="../assets/img/navbar-circle.png" alt="circle">
+                                                    Explore Creator
+                                                </a>
+                                            </li>
+                                            <li class="drop-li">
+                                                <a href="../pages/single-creator.html" class="drop-a heading-SB">
+                                                    <img class="drop-circle" src="../assets/img/navbar-circle.png" alt="circle">
+                                                    Single Creator
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu-li">
+                                    <a href="../pages/activity.html" class="menu-a heading-SB">
+                                        <img class="circle-img" src="../assets/img/navbar-circle.png" alt="circle">
+                                        Activity
+                                    </a>
+                                </li>
+                                <li class="menu-li">
+                                    <p class="menu-a heading-SB">
+                                        <img class="circle-img" src="../assets/img/navbar-circle.png" alt="circle">
+                                        Pages
+                                    </p>
+                                    <div class="menu-drop-otr">
+                                        <span class="arrow-box"></span>
+                                        <ul class="drop-ul">
+                                            <li class="drop-li">
+                                                <a href="../pages/about.html" class="drop-a heading-SB">
+                                                    <img class="drop-circle" src="../assets/img/navbar-circle.png" alt="circle">
+                                                    About
+                                                </a>
+                                            </li>
+                                            <li class="drop-li">
+                                                <a href="../pages/how-it-work.html" class="drop-a heading-SB">
+                                                    <img class="drop-circle" src="../assets/img/navbar-circle.png" alt="circle">
+                                                    How it Works
+                                                </a>
+                                            </li>
+                                            <li class="drop-li">
+                                                <a href="../pages/contact.html" class="drop-a heading-SB">
+                                                    <img class="drop-circle" src="../assets/img/navbar-circle.png" alt="circle">
+                                                    Contact
+                                                </a>
+                                            </li>
+                                            <li class="drop-li">
+                                                <a href="../pages/login.html" class="drop-a heading-SB">
+                                                    <img class="drop-circle" src="../assets/img/navbar-circle.png" alt="circle">
+                                                    Login
+                                                </a>
+                                            </li>
+                                            <li class="drop-li">
+                                                <a href="../pages/signup.html" class="drop-a heading-SB">
+                                                    <img class="drop-circle" src="../assets/img/navbar-circle.png" alt="circle">
+                                                    Sign Up
+                                                </a>
+                                            </li>
+                                            <li class="drop-li">
+                                                <p class="drop-a heading-SB">
+                                                    <img class="drop-circle" src="../assets/img/navbar-circle.png" alt="circle">
+                                                    Other Pages
+                                                </p>
+                                                <div class="other-drop-otr">
+                                                    <span class="other-arrow-box"></span>
+                                                    <ul class="other-drop-ul">
+                                                        <li class="other-drop-li">
+                                                            <a href="../pages/404.html" class="other-drop-a heading-SB">
+                                                                <img class="drop-circle" src="../assets/img/navbar-circle.png" alt="circle">
+                                                                404
+                                                            </a>
+                                                        </li>
+                                                        <li class="other-drop-li">
+                                                            <a href="../pages/Privacy-policy.html" class="other-drop-a heading-SB">
+                                                                <img class="drop-circle" src="../assets/img/navbar-circle.png" alt="circle">
+                                                                Privacy Policy
+                                                            </a>
+                                                        </li>
+                                                        <li class="other-drop-li">
+                                                            <a href="../pages/Terms-of-services.html" class="other-drop-a heading-SB">
+                                                                <img class="drop-circle" src="../assets/img/navbar-circle.png" alt="circle">
+                                                                Terms of Services
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu-li">
+                                    <a href="" class="menu-a heading-SB">
+                                        <img class="circle-img" src="../assets/img/navbar-circle.png" alt="circle">
+                                        Community
+                                    </a>
+                                    <div class="menu-drop-otr">
+                                        <span class="arrow-box"></span>
+                                        <ul class="drop-ul">
+                                            <li class="drop-li">
+                                                <a href="../pages/blog.html" class="drop-a heading-SB">
+                                                    <img class="drop-circle" src="../assets/img/navbar-circle.png" alt="circle">
+                                                    Blog
+                                                </a>
+                                            </li>
+                                            <li class="drop-li">
+                                                <a href="../pages/help-center.html" class="drop-a heading-SB">
+                                                    <img class="drop-circle" src="../assets/img/navbar-circle.png" alt="circle">
+                                                    Help Center
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="action">
+                            <div class="icon-otr search-otr" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <img class="icon search-icon" src="../assets/img/search-icon.png" alt="icon">
+                            </div>
+                            <div class="icon-otr upload-otr" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                <img class="icon upload-icon" src="../assets/img/upload-icon.png" alt="icon">
+                            </div>
+                            <div class="icon-otr connect-otr" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                <img class="icon wallet-icon" src="../assets/img/wallet-icon.png" alt="icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+    <!--==================================
+            Navbar End Here
+    ===================================-->
+
+    <!--==================================
+            Inner-header start Here
+    ===================================-->
+
+        <section class="inner-header">
+            <img class="circle-icon" src="../assets/img/circle-icon.png" alt="icon">
+            <img class="cube-icon" src="../assets/img/cube-icon.png" alt="icon">
+            <div class="container-fluid">
+                <div class="wrapper">
+                    <h2 class="heading heading-h2">Explore Creator</h2>
+                </div>
+            </div>
+        </section>
+
+    <!--==================================
+            Inner-header End Here
+    ===================================-->
+
+    <!--==================================
+            Explore Creator start Here
+    ===================================-->
+
+        <section class="explore-creator">
+            <div class="container-fluid">
+                <div class="wrapper">
+                    <h2 class="heading heading-h2">Our All Feature Creators</h2>
+                </div>
+                <div class="row row-custom">
+                    <div class="col-lg-4 col-md-6 col-creator-otr">
+                        <div class="col-creator-inr">
+                            <div class="num-otr">
+                                <h3 class="heading-h3 num">01</h3>
+                            </div>
+                            <div class="profile-otr">
+                                <div class="user-info">
+                                    <a href="../pages/single-creator.html" class="user-img-otr">
+                                        <img class="creator-img" src="../assets/img/creator-img1.png" alt="img">
+                                        <div class="check-icon-otr">
+                                            <i class="ri-check-line check-icon"></i>
+                                        </div>
+                                    </a>
+                                    <div class="username-otr">
+                                        <a href="../pages/single-creator.html" class="heading-SB-Orbitron username">Usman Ali</a>
+                                        <p class="heading-XS user-funds">3.765 ETH</p>
+                                    </div>
+                                </div>
+                                <div class="more-icon-otr">
+                                    <i class="ri-more-fill more-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-creator-otr">
+                        <div class="col-creator-inr">
+                            <div class="num-otr">
+                                <h3 class="heading-h3 num">02</h3>
+                            </div>
+                            <div class="profile-otr">
+                                <div class="user-info">
+                                    <a href="../pages/single-creator.html" class="user-img-otr">
+                                        <img class="creator-img" src="../assets/img/creator-img2.png" alt="img">
+                                        <div class="check-icon-otr">
+                                            <i class="ri-check-line check-icon"></i>
+                                        </div>
+                                    </a>
+                                    <div class="username-otr">
+                                        <a href="../pages/single-creator.html" class="heading-SB-Orbitron username">Umer Awais</a>
+                                        <p class="heading-XS user-funds">3.765 ETH</p>
+                                    </div>
+                                </div>
+                                <div class="more-icon-otr">
+                                    <i class="ri-more-fill more-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-creator-otr">
+                        <div class="col-creator-inr">
+                            <div class="num-otr">
+                                <h3 class="heading-h3 num">03</h3>
+                            </div>
+                            <div class="profile-otr">
+                                <div class="user-info">
+                                    <a href="../pages/single-creator.html" class="user-img-otr">
+                                        <img class="creator-img" src="../assets/img/creator-img3.png" alt="img">
+                                        <div class="check-icon-otr">
+                                            <i class="ri-check-line check-icon"></i>
+                                        </div>
+                                    </a>
+                                    <div class="username-otr">
+                                        <a href="../pages/single-creator.html" class="heading-SB-Orbitron username">iamhmed lutaf</a>
+                                        <p class="heading-XS user-funds">3.765 ETH</p>
+                                    </div>
+                                </div>
+                                <div class="more-icon-otr">
+                                    <i class="ri-more-fill more-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-creator-otr">
+                        <div class="col-creator-inr">
+                            <div class="num-otr">
+                                <h3 class="heading-h3 num">04</h3>
+                            </div>
+                            <div class="profile-otr">
+                                <div class="user-info">
+                                    <a href="../pages/single-creator.html" class="user-img-otr">
+                                        <img class="creator-img" src="../assets/img/creator-img4.png" alt="img">
+                                        <div class="check-icon-otr">
+                                            <i class="ri-check-line check-icon"></i>
+                                        </div>
+                                    </a>
+                                    <div class="username-otr">
+                                        <a href="../pages/single-creator.html" class="heading-SB-Orbitron username">Rehman Ahmed</a>
+                                        <p class="heading-XS user-funds">3.765 ETH</p>
+                                    </div>
+                                </div>
+                                <div class="more-icon-otr">
+                                    <i class="ri-more-fill more-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-creator-otr">
+                        <div class="col-creator-inr">
+                            <div class="num-otr">
+                                <h3 class="heading-h3 num">05</h3>
+                            </div>
+                            <div class="profile-otr">
+                                <div class="user-info">
+                                    <a href="../pages/single-creator.html" class="user-img-otr">
+                                        <img class="creator-img" src="../assets/img/creator-img5.png" alt="img">
+                                        <div class="check-icon-otr">
+                                            <i class="ri-check-line check-icon"></i>
+                                        </div>
+                                    </a>
+                                    <div class="username-otr">
+                                        <a href="../pages/single-creator.html" class="heading-SB-Orbitron username">Asif Ali</a>
+                                        <p class="heading-XS user-funds">3.765 ETH</p>
+                                    </div>
+                                </div>
+                                <div class="more-icon-otr">
+                                    <i class="ri-more-fill more-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-creator-otr">
+                        <div class="col-creator-inr">
+                            <div class="num-otr">
+                                <h3 class="heading-h3 num">06</h3>
+                            </div>
+                            <div class="profile-otr">
+                                <div class="user-info">
+                                    <a href="../pages/single-creator.html" class="user-img-otr">
+                                        <img class="creator-img" src="../assets/img/creator-img6.png" alt="img">
+                                        <div class="check-icon-otr">
+                                            <i class="ri-check-line check-icon"></i>
+                                        </div>
+                                    </a>
+                                    <div class="username-otr">
+                                        <a href="../pages/single-creator.html" class="heading-SB-Orbitron username">Awais Ansari</a>
+                                        <p class="heading-XS user-funds">3.765 ETH</p>
+                                    </div>
+                                </div>
+                                <div class="more-icon-otr">
+                                    <i class="ri-more-fill more-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-creator-otr">
+                        <div class="col-creator-inr">
+                            <div class="num-otr">
+                                <h3 class="heading-h3 num">07</h3>
+                            </div>
+                            <div class="profile-otr">
+                                <div class="user-info">
+                                    <a href="../pages/single-creator.html" class="user-img-otr">
+                                        <img class="creator-img" src="../assets/img/creator-img7.png" alt="img">
+                                        <div class="check-icon-otr">
+                                            <i class="ri-check-line check-icon"></i>
+                                        </div>
+                                    </a>
+                                    <div class="username-otr">
+                                        <a href="../pages/single-creator.html" class="heading-SB-Orbitron username">imuhammad fit</a>
+                                        <p class="heading-XS user-funds">3.765 ETH</p>
+                                    </div>
+                                </div>
+                                <div class="more-icon-otr">
+                                    <i class="ri-more-fill more-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-creator-otr">
+                        <div class="col-creator-inr">
+                            <div class="num-otr">
+                                <h3 class="heading-h3 num">08</h3>
+                            </div>
+                            <div class="profile-otr">
+                                <div class="user-info">
+                                    <a href="../pages/single-creator.html" class="user-img-otr">
+                                        <img class="creator-img" src="../assets/img/creator-img8.png" alt="img">
+                                        <div class="check-icon-otr">
+                                            <i class="ri-check-line check-icon"></i>
+                                        </div>
+                                    </a>
+                                    <div class="username-otr">
+                                        <a href="../pages/single-creator.html" class="heading-SB-Orbitron username">Hafiz Usman</a>
+                                        <p class="heading-XS user-funds">3.765 ETH</p>
+                                    </div>
+                                </div>
+                                <div class="more-icon-otr">
+                                    <i class="ri-more-fill more-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-creator-otr">
+                        <div class="col-creator-inr">
+                            <div class="num-otr">
+                                <h3 class="heading-h3 num">09</h3>
+                            </div>
+                            <div class="profile-otr">
+                                <div class="user-info">
+                                    <a href="../pages/single-creator.html" class="user-img-otr">
+                                        <img class="creator-img" src="../assets/img/creator-img9.png" alt="img">
+                                        <div class="check-icon-otr">
+                                            <i class="ri-check-line check-icon"></i>
+                                        </div>
+                                    </a>
+                                    <div class="username-otr">
+                                        <a href="../pages/single-creator.html" class="heading-SB-Orbitron username">Zain idrees</a>
+                                        <p class="heading-XS user-funds">3.765 ETH</p>
+                                    </div>
+                                </div>
+                                <div class="more-icon-otr">
+                                    <i class="ri-more-fill more-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="action-otr">
+                    <a href="" class="load-btn theme-btn-1">Load More</a>
+                </div>
+            </div>
+        </section>
+
+    <!--==================================
+            Explore Creator End Here
+    ===================================-->
+
+    <!--==================================
+            Footer start Here
+    ===================================-->
+
+        <footer class="footer">
+            <span class="blur-circle"></span>
+            <div class="container-fluid">
+                <div class="row row-custom-main">
+                    <div class="col-lg-5 col-logo-otr">
+                        <div class="col-logo-inr">
+                            <div class="logo-main">
+                                <a href="../index.html" class="logo-otr">
+                                    <img class="logo" src="../assets/img/brand-logo.png" alt="logo">
+                                </a>
+                                <p class="heading-S desc">
+                                    Created with the collaboration of over 60 of the world's best Nuron Artists.
+                                </p>
+                                <ul class="social-ul">
+                                    <li class="social-li">
+                                        <a  class="social-a" href="#">
+                                            <i class="ri-facebook-circle-line icon"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social-li">
+                                        <a  class="social-a" href="#">
+                                            <i class="ri-twitter-line icon"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social-li">
+                                        <a  class="social-a" href="#">
+                                            <i class="ri-discord-line icon"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social-li">
+                                        <a  class="social-a" href="#">
+                                            <i class="ri-pinterest-line icon"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social-li">
+                                        <a  class="social-a" href="#">
+                                            <i class="ri-youtube-line icon"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social-li">
+                                        <a  class="social-a" href="#">
+                                            <i class="ri-telegram-line icon"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="subscribe-main">
+                                <h3 class="heading heading-h3">Receive Latest Updates for Free</h3>
+                                <div class="action-otr">
+                                    <div class="input-otr">
+                                        <input class="input input-theme" type="email" placeholder="Email Address">
+                                    </div>
+                                    <div class="action">
+                                        <input class="theme-btn-1 subscribe-btn" type="submit" value="Subscribe Now">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-menu-art-otr">
+                        <div class="col-menu-art-inr">
+                            <div class="trending-main">
+                                <h3 class="heading heading-h3">Trending Artwork</h3>
+                                <ul class="imgs-ul">
+                                    <li class="imgs-li">
+                                        <a href="../pages/explore-artwork.html" class="imgs-a">
+                                            <img class="img" src="../assets/img/artwork-img1.png" alt="artwork">
+                                        </a>
+                                    </li>
+                                    <li class="imgs-li">
+                                        <a href="../pages/explore-artwork.html" class="imgs-a">
+                                            <img class="img" src="../assets/img/artwork-img2.png" alt="artwork">
+                                        </a>
+                                    </li>
+                                    <li class="imgs-li">
+                                        <a href="../pages/explore-artwork.html" class="imgs-a">
+                                            <img class="img" src="../assets/img/artwork-img3.png" alt="artwork">
+                                        </a>
+                                    </li>
+                                    <li class="imgs-li">
+                                        <a href="../pages/explore-artwork.html" class="imgs-a">
+                                            <img class="img" src="../assets/img/artwork-img4.png" alt="artwork">
+                                        </a>
+                                    </li>
+                                    <li class="imgs-li">
+                                        <a href="../pages/explore-artwork.html" class="imgs-a">
+                                            <img class="img" src="../assets/img/artwork-img5.png" alt="artwork">
+                                        </a>
+                                    </li>
+                                    <li class="imgs-li">
+                                        <a href="../pages/explore-artwork.html" class="imgs-a">
+                                            <img class="img" src="../assets/img/artwork-img6.png" alt="artwork">
+                                        </a>
+                                    </li>
+                                    <li class="imgs-li">
+                                        <a href="../pages/explore-artwork.html" class="imgs-a">
+                                            <img class="img" src="../assets/img/artwork-img7.png" alt="artwork">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row row-custom">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-navigation-otr">
+                                    <div class="col-navigation-inr">
+                                        <h3 class="heading heading-h3">Navigation</h3>
+                                        <ul class="navigation-ul">
+                                            <li class="navigation-li">
+                                                <a href="../index.html" class="navigation-a heading-SB-Orbitron">Home</a>
+                                            </li>
+                                            <li class="navigation-li">
+                                                <a href="../pages/explore-artwork.html" class="navigation-a heading-SB-Orbitron">Explore</a>
+                                            </li>
+                                            <li class="navigation-li">
+                                                <a href="../pages/activity.html" class="navigation-a heading-SB-Orbitron">Activity</a>
+                                            </li>
+                                            <li class="navigation-li">
+                                                <a href="" class="navigation-a heading-SB-Orbitron">Pages</a>
+                                            </li>
+                                            <li class="navigation-li">
+                                                <a href="" class="navigation-a heading-SB-Orbitron">Community</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-explore-otr">
+                                    <div class="col-explore-inr">
+                                        <h3 class="heading heading-h3">Explore</h3>
+                                        <ul class="explore-ul">
+                                            <li class="explore-li">
+                                                <a href="../pages/explore-artwork.html" class="explore-a heading-SB-Orbitron">Explore Artworks</a>
+                                            </li>
+                                            <li class="explore-li">
+                                                <a href="../pages/single-artwork.html" class="explore-a heading-SB-Orbitron">Single Artwork</a>
+                                            </li>
+                                            <li class="explore-li">
+                                                <a href="../pages/explore-creator.html" class="explore-a heading-SB-Orbitron">Explore Creators</a>
+                                            </li>
+                                            <li class="explore-li">
+                                                <a href="../pages/single-creator.html" class="explore-a heading-SB-Orbitron">Single Creator</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-community-otr">
+                                    <div class="col-community-inr">
+                                        <h3 class="heading heading-h3">Community</h3>
+                                        <ul class="community-ul">
+                                            <li class="community-li">
+                                                <a href="../pages/blog.html" class="community-a heading-SB-Orbitron">Blog</a>
+                                            </li>
+                                            <li class="community-li">
+                                                <a href="../pages/help-center.html" class="community-a heading-SB-Orbitron">Help Center</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="copright">
+            <div class="container-fluid">
+                <div class="wrapper">
+                    <p class="copyright-text heading-S">Copyright © 2023 by <a href="https://themeforest.net/user/vistothemes/portfolio" class="linkk heading-SB">Vistothemes</a>. All rights reserved.</p>
+                    <p class="privacy-linkk-text heading-S">
+                        <a href="../pages/Privacy-policy.html" class="linkk-inr">Privacy Policy</a>
+                        .
+                        <a href="../pages/Terms-of-services.html" class="linkk-inr">Terms of Services</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    <!--==================================
+            Footer End Here
+    ===================================-->
+
+
+
+
+    <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../assets/libs/jquery.countdown/jquery.countdown.js"></script>
+    <script src="../assets/libs/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

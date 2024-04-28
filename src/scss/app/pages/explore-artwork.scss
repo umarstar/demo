@@ -1,0 +1,66 @@
+
+
+
+/*====================================
+        explore-artwork Start Here
+====================================*/
+
+.explore-artwork{
+    overflow: hidden;
+    margin: 112px 0;
+    @include breakpoint($secreen-xs){
+        margin: 80px 0;
+    }
+    .container-fluid{
+        .wrapper{
+            text-align: center;
+            margin-bottom: 48px;
+            .heading{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $White-Color;
+                margin-bottom: 32px;
+            }
+            nav{
+                .nav-tabs{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: none;
+                    gap: 16px;
+                    .nav-link{
+                        background-color: $Secondary-50;
+                        border: none;
+                        &:hover{
+                            background-color: $Primary-Color;
+                            color: $Black-Color;
+                        }
+                    }
+                    .active{
+                        background-color: $Primary-Color;
+                        color: $Black-Color;
+                    }
+                }
+            }
+        }
+        .tab-content{
+            .tab-pane{
+                .row-custom{
+                    justify-content: center;
+                    gap: 24px 0;
+                }
+            }
+            .action-otr{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 48px;
+            }
+        }
+    }
+}
+
+/*====================================
+        explore-artwork End Here
+====================================*/

@@ -1,0 +1,42 @@
+
+
+/*====================================
+            404 Start Here
+====================================*/
+
+.error-main{
+    margin: 112px 0 128px 0;
+    @include breakpoint($secreen-xs){
+        margin: 80px 0;
+    }
+    .container-fluid{
+        .row-custom{
+            justify-content: center;
+            .col-content-otr{
+                .col-content-inr{
+                    .img{
+                        width: 100%;
+                        border-radius: 4px;
+                    }
+                    .heading{
+                        text-align: center;
+                        color: $White-Color;
+                        margin: 32px 0 40px 0;
+                        @include breakpoint($secreen-xs){
+                            margin: 24px 0;
+                        }
+                    }
+                    .action{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*====================================
+            404 End Here
+====================================*/

@@ -1,0 +1,422 @@
+
+
+/*====================================
+        Single Artwork Start Here
+====================================*/
+
+.single-artwork{
+    margin: 112px 0;
+    @include breakpoint($secreen-xs){
+        margin: 80px 0;
+    }
+    .container-fluid{
+        .row-custom{
+            .col-art-img-otr{
+                .col-art-img-inr{
+                    position: sticky;
+                    top: 0;
+                    left: 0;
+                    background-color: $White-10;
+                    padding: 16px 16px 24px 16px;
+                    border-radius: 4px;
+                    .art-img-otr{
+                        display: flex;
+                        margin-bottom: 24px;
+                        nav{
+                            margin-right: 16px;
+                            .nav-tabs{
+                                display: flex;
+                                align-items: flex-start;
+                                flex-direction: column;
+                                border: none;
+                                gap: 16px 0;
+                                .nav-link{
+                                    border: none;
+                                    background-color: transparent;
+                                    padding: 0;
+                                    opacity: .5;
+                                    transition: .3s;
+                                    .img-tab{
+                                        width: 120px;
+                                        height: 120px;
+                                        object-fit: cover;
+                                        border-radius: 4px;
+                                        border: 2px solid transparent;
+                                        transition: .3s;
+                                        @include breakpoint($secreen-xs){
+                                            width: 80px;
+                                            height: 80px;
+                                        }
+                                    }
+                                }
+                                .active{
+                                    opacity: 1;
+                                    .img-tab{
+                                        border: 2px solid $White-Color;
+                                    }
+                                }
+                            }
+                        }
+                        .tab-content{
+                            width: 100%;
+                            .tab-pane{
+                                .img{
+                                    width: 100%;
+                                    height: 392px;
+                                    object-fit: cover;
+                                    border-radius: 4px;
+                                    @include breakpoint($secreen-xs){
+                                        height: 269px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .like-more-otr{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        .likes-inr{
+                            display: flex;
+                            align-items: center;
+                            background-color: $White-10;
+                            border-radius: 4px;
+                            padding: 12px 16px;
+                            cursor: pointer;
+                            .like-icon{
+                                font-size: 24px;
+                                line-height: 0;
+                                color: $White-Color;
+                                margin-right: 12px;
+                            }
+                            .like-text{
+                                color: $White-Color;
+                            }
+                        }
+                        .more-icon-otr{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 52px;
+                            height: 52px;
+                            border-radius: 100%;
+                            background-color: $White-10;
+                            cursor: pointer;
+                            transition: .3s;
+                            &:hover{
+                                background-color: $Primary-Color;
+                                .more-icon{
+                                    color: $Black-Color;
+                                }
+                            }
+                            .more-icon{
+                                font-size: 24px;
+                                color: $White-Color;
+                                transition: .3s;
+                            }
+                        }
+                    }
+                }
+            }
+            .col-detail-otr{
+                .col-detail-inr{
+                    padding-left: 48px;
+                    @include breakpoint($secreen-max-md){
+                        padding: 48px 0 0 0;
+                    }
+                    .heading{
+                        color: $White-Color;
+                    }
+                    .bid-main{
+                        display: flex;
+                        align-items: center;
+                        margin: 24px 0 36px 0;
+                        @include breakpoint($secreen-xs){
+                            flex-direction: column;
+                            align-items: flex-start;
+                        }
+                        .highest-bid-box{
+                            background-color: $White-10;
+                            border-radius: 4px;
+                            padding: 16px 24px;
+                            margin-right: 24px;
+                            @include breakpoint($secreen-xs){
+                                margin: 0 0 24px 0;
+                                width: 100%;
+                            }
+                            .bid-text{
+                                color: $White-45;
+                            }
+                            .head-eth{
+                                color: $Primary-Color;
+                                margin: 8px 0;
+                            }
+                            .price-text{
+                                color: $White-45;
+                            }
+                        }
+                        .bid-inr{
+                            background-color: $Primary-Color;
+                            border-radius: 4px;
+                            padding: 16px 24px;
+                            @include breakpoint($secreen-xs){
+                                width: 100%;
+                            }
+                            .text{
+                                color: $Black-Color;
+                                margin-bottom: 8px;
+                            }
+                            .timer{
+                                display: flex;
+                                align-items: center;
+                                .main{
+                                    &:not(:last-child){
+                                        margin-right: 24px;
+                                    }
+                                    .time-inr{
+                                        color: $Black-Color;
+                                        margin-bottom: 8px;
+                                    }
+                                    .time-text{
+                                        color: $Black-Color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .action-otr{
+                        display: flex;
+                    }
+                    .nav{
+                        margin: 48px 0 24px 0;
+                        border: none;
+                        gap: 0 16px;
+                        .nav-item{
+                            .nav-link{
+                                background-color: $Secondary-50;
+                                border: none;
+                                &:hover{
+                                    background-color: $Primary-Color;
+                                    color: $Black-Color;
+                                }
+                            }
+                            .active{
+                                background-color: $Primary-Color;
+                                color: $Black-Color;
+                            }
+                        }
+                    }
+                    .tab-content{
+                        .tab-one{
+                            .desc{
+                                color: $White-75;
+                            }
+                            .desc1{
+                                margin-bottom: 12px;
+                            }
+                            .owner-text{
+                                color: $White-Color;
+                                margin: 24px 0 16px 0;
+                            }
+                            .creator-otr{
+                                display: grid;
+                                align-items: center;
+                                grid-template-columns: 1fr auto;
+                                padding: 16px;
+                                width: 50%;
+                                gap: 16px;
+                                background-color: $White-10;
+                                border-radius: 4px;
+                                @include breakpoint($secreen-xs){
+                                    width: 100%;
+                                }
+                                .user-info{
+                                    display: flex;
+                                    align-items: center;
+                                    .user-img-otr{
+                                        position: relative;
+                                        margin-right: 20px;
+                                        .creator-img{
+                                            width: 60px;
+                                            height: 60px;
+                                            object-fit: cover;
+                                            border: 2px solid $White-Color;
+                                            border-radius: 4px;
+                                        }
+                                        .check-icon-otr{
+                                            position: absolute;
+                                            bottom: -2px;
+                                            right: -2px;
+                                            width: 20px;
+                                            height: 20px;
+                                            background-color: $White-Color;
+                                            border-radius: 100%;
+                                            border: 1px solid $Black-Color;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            .check-icon{
+                                                color: $Black-Color;
+                                                font-size: 14px;
+                                                line-height: 0;
+                                                font-weight: bold;
+                                            }
+                                        }
+                                    }
+                                    .username-otr{
+                                        .username{
+                                            color: $White-Color;
+                                            transition: .3s;
+                                            &:hover{
+                                                color: $Primary-Color;
+                                            }
+                                        }
+                                        .user-funds{
+                                            color: $White-75;
+                                        }
+                                    }
+                                }
+                                .more-icon-otr{
+                                    width: 30px;
+                                    height: 30px;
+                                    border-radius: 100%;
+                                    background-color: $White-10;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    cursor: pointer;
+                                    .more-icon{
+                                        color: $White-Color;
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+                        }
+                        .tab-two{
+                            .bid-creator{
+                                display: flex;
+                                align-items: center;
+                                &:not(:last-child){
+                                    margin-bottom: 24px;
+                                }
+                                .img-otr{
+                                    margin-right: 16px;
+                                    .img{
+                                        width: 60px;
+                                        height: 60px;
+                                        border-radius: 4px;
+                                        object-fit: cover;
+                                        border: 2px solid $White-Color;
+                                    }
+                                }
+                                .content{
+                                    .desc{
+                                        color: $White-75;
+                                        .linkk{
+                                            display: inline;
+                                            color: $White-Color;
+                                        }
+                                    }
+                                    .time-text{
+                                        color: $White-75;
+                                    }
+                                }
+                            }
+                        }
+                        .tab-three{
+                            .col-activity-inr{
+                                .activity-box{
+                                    &:not(:last-child){
+                                        margin-bottom: 24px;
+                                    }
+                                    @include breakpoint($secreen-lg){
+                                        position: relative;
+                                    }
+                                    .img-content{
+                                        @include breakpoint($secreen-lg){
+                                            flex-direction: column;
+                                            align-items: flex-start;
+                                        }
+                                        .img-otr{
+                                            @include breakpoint($secreen-lg){
+                                                margin: 0 0 16px 0;
+                                            }
+                                        }
+                                        .content-otr{
+                                            .heading{
+                                                color: $White-Color;
+                                                transition: .3s;
+                                                &:hover{
+                                                    color: $Primary-Color;
+                                                }
+                                            }
+                                            .tag-otr{
+                                                @include breakpoint($secreen-lg){
+                                                    flex-direction: column;
+                                                    align-items: flex-start;
+                                                }
+                                                .tag-inr1{
+                                                    &:not(:last-child){
+                                                        margin-right: 24px;
+                                                        @include breakpoint($secreen-lg){
+                                                            margin: 0 0 8px 0;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .icon-otr{
+                                        @include breakpoint($secreen-lg){
+                                            position: absolute;
+                                            width: 40px;
+                                            height: 40px;
+                                            top: 16px;
+                                            right: 16px;
+                                        }
+                                        .icon{
+                                            @include breakpoint($secreen-lg){
+                                                font-size: 20px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .feature{
+            margin-top: 72px;
+            @include breakpoint($secreen-xs){
+                margin-top: 48px;
+            }
+            .wrapper{
+                text-align: center;
+                margin-bottom: 48px;
+                .tag{
+                    color: $Primary-Color;
+                    margin-bottom: 16px;
+                }
+                .heading{
+                    color: $White-Color;
+                }
+            }
+            .row-custom{
+                justify-content: center;
+                gap: 24px 0;
+            }
+            .action-otr{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 48px;
+            }
+        }
+    }
+}
+
+/*====================================
+        Single Artwork End Here
+====================================*/
